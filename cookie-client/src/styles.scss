@@ -1,0 +1,24 @@
+// Styles for the main application
+@import "css/variables.scss"; // Importing SCSS variables
+@import "css/theme.scss"; // Importing theme styles
+@import "css/flex-lib.scss"; // Importing flexbox utility styles
+
+// Global styles for HTML, body, and app-root
+html,
+body,
+app-root {
+  font-family: $font-family; // Setting the font family from variables
+  color: $color-dark; // Setting the text color from variables
+  background-color: white; // Setting the background color to white
+  margin: 0; // Removing default margin
+  padding: 0; // Removing default padding
+  flex: 1; // Allowing the element to grow and fill available space
+  display: flex; // Using flexbox for layout
+  width: 100%; // Full width
+  flex-direction: column; // Arranging children in a column
+}
+
+// Ensuring the HTML element has a minimum height of 100%
+html {
+  min-height: 100%; // Minimum height to fill the viewport
+}
